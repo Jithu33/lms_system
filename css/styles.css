@@ -1,0 +1,95 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+/* Welcome Container */
+.welcome-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    max-width: 500px;
+    width: 90%;
+}
+
+/* Heading */
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #f1f1f1;
+}
+
+/* Subtext */
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.signup-btn {
+    background: #27ae60;
+    color: white;
+}
+
+.login-btn {
+    background: #e74c3c;
+    color: white;
+}
+
+.signup-btn:hover {
+    background: #219150;
+}
+
+.login-btn:hover {
+    background: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .welcome-container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}

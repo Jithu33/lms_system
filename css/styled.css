@@ -1,0 +1,118 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    font-size: 26px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.logout-btn {
+    background: #e74c3c;
+    color: white;
+    float: right;
+    font-weight: bold;
+    padding: 8px 15px;
+}
+
+.logout-btn:hover {
+    background: #c0392b;
+}
+
+/* Table Container */
+.table-container {
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #2ecc71;
+    color: white;
+}
+
+td {
+    background: #ecf0f1;
+}
+
+tr:nth-child(even) td {
+    background: #dfe6e9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .dashboard-container {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
